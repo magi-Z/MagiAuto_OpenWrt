@@ -12,6 +12,4 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
-ZZZ="package/lean/default-settings/files/zzz-default-settings"
-sed -i '/CYXluq4wUazHjmCDBCqXF/d' $ZZZ
-sed -i "s/OpenWrt /Mr.Z compiled in $(TZ=UTC-8 date +%Y.%m.%d) @ OpenWrt" /g $ZZZ
+sed -i "s/OpenWrt /Mr.Z compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $ZZZ
